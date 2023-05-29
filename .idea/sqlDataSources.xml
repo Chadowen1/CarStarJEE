@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="21dc492b-7cae-4e13-908e-b91708a353f5" name="carstar_db@localhost Mapping">
+      <data-sources db="c4632c1c-4ee1-42e7-becc-cd52c7b301bb" ddl="583a115a-13f2-409e-9e3e-e710b3cb26ae" />
+      <scope>
+        <node kind="schema" qname="carstar_db" />
+      </scope>
+    </mapping>
+  </component>
+</project>

@@ -1,0 +1,33 @@
+body{
+  background-color: #e3f6f5 !important;
+}
+
+.full-width-button {
+  width: 100%;
+  display: block;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px; 
+
+}
+
+.input {
+  border-radius: 10px !important;
+}
+
+.mounir{
+  width: 100%;
+  display: block;
+  border-radius: 20px; 
+}
+
+.card {
+  border: none !important;
+  background-color: #e3f6f5 !important;
+}
+
+ 
