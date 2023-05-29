@@ -74,8 +74,7 @@ as simple as a click.
 - [Chadi Nawar](https://github.com/Chadowen1)
 - [Mouhamed Mounir Bouchaala](https://github.com/mounirbch)
 - [Yasmine Mizouri](https://github.com/yasminemizouri)
-- [Mme Raoudha Souabni](Supervisor)
-
+- [Mme Raoudha Souabni](#) [Supervisor]
 
 ## Links
 
