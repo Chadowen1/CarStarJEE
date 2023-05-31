@@ -23,9 +23,10 @@
 
     <filter-mapping>
         <filter-name>AuthenticationFilter</filter-name>
-        <url-pattern>/dashboard/*</url-pattern>
+        <url-pattern>/Register.jsp</url-pattern>
+        <url-pattern>/Login.jsp</url-pattern>
+        <url-pattern>/adminlogin.jsp</url-pattern>
     </filter-mapping>
-
 
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>

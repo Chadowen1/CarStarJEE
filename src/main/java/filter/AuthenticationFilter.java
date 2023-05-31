@@ -7,26 +7,33 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter(filterName = "AuthenticationFilter", urlPatterns = {"/*"})
+@WebFilter(urlPatterns = {"/Register.jsp", "/Login.jsp", "/adminlogin.jsp"})
 public class AuthenticationFilter implements Filter {
 
-    public void init(FilterConfig config) throws ServletException {}
-    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
-            throws ServletException, IOException {
-        HttpServletRequest req = (HttpServletRequest) request;
-        HttpServletResponse resp = (HttpServletResponse) response;
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+        HttpServletRequest httpRequest = (HttpServletRequest) request;
+        HttpServletResponse httpResponse = (HttpServletResponse) response;
 
-        String uri = req.getRequestURI();
-        HttpSession session = req.getSession(false);
-
-        if (session == null && !(uri.endsWith("jsp") || uri.endsWith("login") || uri.endsWith("register"))) {
-            resp.sendRedirect("adminlogin.jsp");
+        HttpSession session = httpRequest.getSession(false);
+        if (session != null && session.getAttribute("jwtToken") != null) {
+            // Session already exists, redirect to Shop.jsp
+            httpResponse.sendRedirect("Shop.jsp");
         } else {
-            chain.doFilter(request, response);
+            chain.doFilter(request, response); // Continue with the filter chain
+        }
+
+        //For Admin Dashboard
+        if (session != null && session.getAttribute("AdminjwtToken") != null) {
+            // Session already exists, redirect to adminlogin.jsp
+            httpResponse.sendRedirect("adminlogin.jsp");
+        } else {
+            chain.doFilter(request, response); // Continue with the filter chain
         }
     }
 
+    public void init(FilterConfig filterConfig) throws ServletException {
+    }
+
     public void destroy() {
-        // Clean up code goes here
     }
 }

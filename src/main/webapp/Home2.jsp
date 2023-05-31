@@ -48,6 +48,10 @@
                             style="padding: 10px;">Home</a>
                     </li>
                     <li class="u-nav-item"><a
+                            class="u-button-style u-nav-link u-text-active-white u-text-grey-25 u-text-hover-white" href="Shop.jsp"
+                            style="padding: 10px;">Shop</a>
+                    </li>
+                    <li class="u-nav-item"><a
                             class="u-button-style u-nav-link u-text-active-white u-text-grey-25 u-text-hover-white"
                             href="#" style="padding: 10px;">About us</a>
                     </li>
