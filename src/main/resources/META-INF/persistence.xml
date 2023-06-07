@@ -7,8 +7,17 @@
     <jta-data-source>java:/MysqlXADS</jta-data-source>
       <class>Model.EntityAccounts</class>
       <class>Model.EntityAdmin</class>
-      <class>Model.EntityCarDb</class>
       <class>Model.EntityUsers</class>
+      <class>Model.EntityBodywork</class>
+      <class>Model.EntityCar</class>
+      <class>Model.EntityCarMake</class>
+      <class>Model.EntityCarModel</class>
+      <class>Model.EntityCarType</class>
+      <class>Model.EntityCharacteristics</class>
+      <class>Model.EntityEngine</class>
+      <class>Model.EntityGearboxHandling</class>
+      <class>Model.EntitySuspensionBrakes</class>
+      <class>Model.EntityOrders</class>
       <properties>
           <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/carstar_db"/>
           <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>

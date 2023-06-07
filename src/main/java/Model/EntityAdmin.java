@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "admin", schema = "carstar_db", catalog = "")
+@Table(name = "admin", schema = "carstar_db")
 public class EntityAdmin implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id

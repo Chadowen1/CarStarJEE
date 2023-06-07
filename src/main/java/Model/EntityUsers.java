@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.util.Collection;
 
 @Entity
-@Table(name = "users", schema = "carstar_db", catalog = "")
+@Table(name = "users", schema = "carstar_db")
 public class EntityUsers {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
